@@ -1,0 +1,10 @@
+1-pizza
+2-coxinha
+3-pastel
+4-lasanha
+5-macarronada
+6-churrasco
+7-chocolate
+8-bolo
+9-torta
+10-arroz e feijão
