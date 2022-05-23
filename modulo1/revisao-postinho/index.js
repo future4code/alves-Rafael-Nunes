@@ -36,6 +36,10 @@ console.log(verificaSeEMaior(321, 2156))
 
 // Exercício 3------------------------------------------------------------------------------------
 function registerUser(name, age, password, nacionality) {
+  // const name1 = prompt('digite seu nome')
+  // const age1 = Number(prompt('digite sua idade'))
+  // const password1 = prompt('crie uma senha')
+  // const nacionality1 = prompt('qual sua nacionalidade?')
   if (
     age >= 18 &&
     password.length >= 6 &&
@@ -47,7 +51,12 @@ function registerUser(name, age, password, nacionality) {
     console.log('deu ruim')
   }
 }
-console.log(registerUser('Rafael', 18, '123456', 'brasileira'))
+const name = prompt('digite seu nome')
+const age = Number(prompt('digite sua idade'))
+const password = prompt('crie uma senha')
+const nacionality = prompt('qual sua nacionalidade?')
+console.log(registerUser(name, age, password, nacionality))
+
 // Função criada com switch case
 
 // function registerUser(name, age, password, nacionality) {
@@ -85,7 +94,9 @@ function loginUser(user, senha) {
     console.log('senha invalida')
   }
 }
-console.log(loginUser('Rafael', 'Labenu'))
+const user = prompt('digite seu nome')
+const senha = prompt('digite sua senha de cadastro')
+console.log(loginUser(user, senha))
 
 // function loginUser(user, senha) {
 //   const login = [user, senha]
@@ -110,23 +121,18 @@ console.log(loginUser('Rafael', 'Labenu'))
 // Exercício 5----------------------------------------------------------------------------------------------------
 
 function vacinaUser(user, vacina) {
-  const userVacina = [user, vacina]
-  switch (userVacina) {
-    case vacina === 'Pfizer'.toLowerCase:
-      console.log('segunda dose com 90 dias')
-      break
-    case vacina === 'Astrazeneca'.toLowerCase:
-      console.log('segunda dose com 90 dias')
-      break
-    case vacina === 'CoronaVac'.toLowerCase:
-      console.log('segunda dose com 28 dias')
-      break
-    default:
-      console.log('vacina não encontrada, confira se o nome esta correto')
-      break
+  let tempo = []
+  let data = []
+  if (vacina === 'CoronaVac'.toLowerCase) {
+    console.log('segunda dose em 28 dias')
+  }
+  if (vacina === 'Astrazenoca'.toLowerCase || 'PFizer'.toLowerCase) {
+    console.log('segunda dose em 90 dias')
   }
 }
-console.log(vacinaUser('Rafael', 'CoronaVac'))
+const user = prompt('digite seu nome de usuario')
+const vacina = prompt('qual vacina voce tomou?')
+console.log(vacinaUser(user, vacina))
 
 const primeiraDose = () => {
   //  Sua lógica aqui
