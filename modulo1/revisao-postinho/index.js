@@ -35,10 +35,38 @@ console.log(verificaSeEMaior(321, 2156))
 // CONDICIONAIS
 
 // Exercício 3------------------------------------------------------------------------------------
-const nomeDoUsuario = prompt('digite seu nome')
-const anoDeNascimento = Number(prompt('em que você nasceu?'))
-const senhaDoUsuaro = prompt('digite uma senha')
-const nacionalidade = prompt('qual sua nacionalidade?')
+function registerUser(name, age, password, nacionality) {
+  if (
+    age >= 18 &&
+    password.length >= 6 &&
+    nacionality.toLowerCase() === 'brasileira'
+  ) {
+    const user = [name, age, password, nacionality]
+    console.log('usuario cadastrado com sucesso')
+  } else {
+    console.log('deu ruim')
+  }
+}
+console.log(registerUser('Rafael', 18, '123456', 'brasileira'))
+// Função criada com switch case
+
+// function registerUser(name, age, password, nacionality) {
+//   const infoUser = [name, age, password, nacionality]
+//   switch (infoUser) {
+//     case age < 18:
+//       console.log('você não tem a idade minima para se cadastrar')
+//       break
+//     case password.length <= 6:
+//       console.log('a senha precisa ter no minimo 6 caracteres')
+//       break
+//     case nacionality.toLowerCase !== 'Brasileira':
+//       console.log('para se cadastrar é preciso ser Brasileiro(a)')
+//     default:
+//       console.log('cadastro realizado com sucesso!!')
+//       break
+//   }
+// }
+// console.log(registerUser('Rafael', 18, '1a2b3c', 'Brasileira'))
 
 const cadastro = () => {
   const usuario = []
@@ -49,14 +77,56 @@ console.log(cadastro())
 
 // Exercício 4-----------------------------------------------------------------------------------------------
 
-const login = () => {
-  const login = 'labenu'
-  //  Sua lógica aqui
+function loginUser(user, senha) {
+  if (senha === 'Labenu') {
+    const login = [user, senha]
+    console.log('usuario logado')
+  } else {
+    console.log('senha invalida')
+  }
 }
+console.log(loginUser('Rafael', 'Labenu'))
 
-console.log(login())
+// function loginUser(user, senha) {
+//   const login = [user, senha]
+//   switch (login) {
+//     case senha !== 'Labenu':
+//       console.log('senha invalida')
+//       break
+//     default:
+//       console.log('usuario logado')
+//       break
+//   }
+// }
+// console.log(loginUser('Rafael', 'Labenu'))
+
+// const login = () => {
+//   const login = 'labenu'
+//   //  Sua lógica aqui
+// }
+
+// console.log(login())
 
 // Exercício 5----------------------------------------------------------------------------------------------------
+
+function vacinaUser(user, vacina) {
+  const userVacina = [user, vacina]
+  switch (userVacina) {
+    case vacina === 'Pfizer'.toLowerCase:
+      console.log('segunda dose com 90 dias')
+      break
+    case vacina === 'Astrazeneca'.toLowerCase:
+      console.log('segunda dose com 90 dias')
+      break
+    case vacina === 'CoronaVac'.toLowerCase:
+      console.log('segunda dose com 28 dias')
+      break
+    default:
+      console.log('vacina não encontrada, confira se o nome esta correto')
+      break
+  }
+}
+console.log(vacinaUser('Rafael', 'CoronaVac'))
 
 const primeiraDose = () => {
   //  Sua lógica aqui
