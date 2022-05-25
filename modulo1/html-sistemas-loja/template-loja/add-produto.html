@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Adicionar Produto</title>
   </head>
   <body>
@@ -11,15 +12,15 @@
       <p>A Sua Moda</p>
     </header>
 
-    <nav>
-      <a href="./index.html">Página Inicial</a>
-      <a href="./ctrl-estoque.html">Controle de Estoque</a>
-      <a href="./add-produto.html">Adicionar Produto</a>
-      <a href="./funcionarios.html">Funcionários</a>
+    <nav id="navprod">
+      <button><a href="./index.html">Página Inicial</a>
+      <button><a href="./ctrl-estoque.html">Controle de Estoque</a>
+      <button><a href="./add-produto.html">Adicionar Produto</a>
+      <button><a href="./funcionarios.html">Funcionários</a>
     </nav>
 
-    <h2>Adicionar Produto</h2>
-    <form action="">
+    <h2 id="prod">Adicionar Produto</h2>
+    <form action="" id="preencher">
       <label for="link-foto">Link para foto: </label>
       <input type="url" id="link-foto" name="link-foto" />
       <br />
@@ -43,7 +44,7 @@
 
       <br />
       <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-      <button type="submit">Adicionar</button>
+      <button id="adicionar" type="submit">Adicionar</button>
     </form>
   </body>
 </html>
