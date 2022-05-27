@@ -1,0 +1,41 @@
+body{
+  background-image: linear-gradient(black, gray, white);
+}
+
+#apresentacao{
+  color: gray;
+  text-align: center;
+  font-size: 25px;
+}
+
+#listaDeInstituicoes{
+  font-size: 20px;
+  height: 75px;
+  width: 150px;
+  background-color:black ;
+  color: white;
+}
+
+#listaExperiencia{
+  font-size: 20px;
+  height: 75px;
+  width: 150px;
+  background-color:black ;
+  color: white;
+}
+
+img{
+  width: 400px;
+  height: 650px;
+  justify-content: right;
+}
+
+#sobreMim{
+  text-align: center;
+  color: black;
+}
+
+#projetos{
+  font-size: 40px;
+  text-align: center;
+}
