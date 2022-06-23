@@ -29,12 +29,13 @@ export default class TelaCadastro extends React.Component {
           Authorization: 'rafael-garcia-alves'
         }
       })
-      .then(resposta => {
-        console.log(resposta)
+      .then(res => {
+        alert('Usuario(a) cadastrado com sucesso!')
+        this.setState({ nome: '', email: '' })
       })
 
-      .catch(erro => {
-        console.log(erro)
+      .catch(err => {
+        alert(err.response.data)
       })
   }
 

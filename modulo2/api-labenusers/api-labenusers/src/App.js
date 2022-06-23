@@ -1,6 +1,8 @@
 import React from 'react'
+import axios from 'axios'
 import TelaCadastro from './components/telaCadastro'
 import ListaUsuarios from './components/listaUsuarios'
+import syled from 'styled-components'
 
 class App extends React.Component {
   state = {
