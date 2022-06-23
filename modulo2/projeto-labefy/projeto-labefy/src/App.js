@@ -1,11 +1,11 @@
-import react from 'react'
+import React from 'react'
 
-function App() {
-  return (
-    <div>
-      <h1>Projeto Labefy</h1>
-    </div>
-  )
+export default class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Projeto Labefy</h1>
+      </div>
+    )
+  }
 }
-
-export default App
