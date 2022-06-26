@@ -22,7 +22,6 @@ export default class App extends React.Component {
     return (
       <div>
         <Header />
-        {this.escolherPaginas()}
         <Playists />
         <AlterarPlays />
       </div>
