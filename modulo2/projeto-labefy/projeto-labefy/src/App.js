@@ -8,21 +8,21 @@ export default class App extends React.Component {
   state = {
     paginas: 'Playlists'
   }
-
-  render() {
-    EscolherPaginas = () => {
-      switch (this.state.paginas) {
-        case 'Playlists':
-          return <Playists />
-        case 'Alterar':
-          return <AlterarPlays />
-        default:
-          return 'Erro'
-      }
+  escolherPaginas = () => {
+    switch (this.state.paginas) {
+      case 'Playlists':
+        return <Playists />
+      case 'Alterar':
+        return <AlterarPlays />
+      default:
+        return 'Erro'
     }
+  }
+  render() {
     return (
       <div>
         <Header />
+        {this.escolherPaginas()}
         <Playists />
         <AlterarPlays />
       </div>
