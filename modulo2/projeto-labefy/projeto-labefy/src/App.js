@@ -6,18 +6,18 @@ import Playists from './components/criarPlaylist'
 
 export default class App extends React.Component {
   state = {
-    paginas: 'Playlists'
+    // paginas: 'Playlists'
   }
-  escolherPaginas = () => {
-    switch (this.state.paginas) {
-      case 'Playlists':
-        return <Playists />
-      case 'Alterar':
-        return <AlterarPlays />
-      default:
-        return 'Erro'
-    }
-  }
+  // escolherPaginas = () => {
+  //   switch (this.state.paginas) {
+  //     case 'Playlists':
+  //       return <Playists />
+  //     case 'Alterar':
+  //       return <AlterarPlays />
+  //     default:
+  //       return 'Erro'
+  //   }
+  // }
   render() {
     return (
       <div>
