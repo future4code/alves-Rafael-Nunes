@@ -10,7 +10,7 @@ function Main() {
   return (
     <div>
       <h3>Feed </h3>
-      <p>aaaaaaaaa</p>
+      <p>texto da imagem</p>
       <Image src="https://picsum.photos/200/150"></Image>
     </div>
   )
