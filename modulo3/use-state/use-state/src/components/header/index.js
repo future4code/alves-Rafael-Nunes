@@ -10,11 +10,9 @@ const StyleImg = styled.img`
 function Header() {
   return (
     <div>
-      <div>
-        <h1>Post</h1>
-        <StyleImg src="https://picsum.photos/200/150"></StyleImg>
-        <p>Usuario</p>
-      </div>
+      <h1>Post</h1>
+      <StyleImg src="https://picsum.photos/200/150"></StyleImg>
+      <p>Usuario</p>
     </div>
   )
 }
