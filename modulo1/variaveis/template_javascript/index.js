@@ -17,7 +17,7 @@ sriam melhores nomes de variaves
 em vez de p horasTrabalhadasDia
 e em vez de t valorGanhoPorDia
 
-na minha opinião os nomes de variaveis estão grandes porm bem significativos
+na minha opinião os nomes de variaveis estão grandes porém bem significativos
 */
 
 //Exercicio de código 2
