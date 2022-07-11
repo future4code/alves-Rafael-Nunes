@@ -1,13 +1,11 @@
 import axios from 'axios'
 import React from 'react'
-import { useEffect } from 'react'
-import { useState } from 'react'
 import { baseURL } from '../constants'
 
-export default function Principal() {
+export default function Tela1() {
   return (
     <div>
-      <h2>principal</h2>
+      <p>Tela1</p>
     </div>
   )
 }
