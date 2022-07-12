@@ -1,4 +1,6 @@
+import Administração from './components/administração/Administração'
 import InscreverSe from './components/inscrever-se/InscreverSe'
+import Login from './components/login/Login'
 import TelaInicial from './components/telaInicial/TelaInicial'
 import Viagens from './components/viagens/Viagens'
 
@@ -7,7 +9,9 @@ function App() {
     <div>
       {/* <TelaInicial /> */}
       {/* <Viagens /> */}
-      <InscreverSe />
+      {/* <InscreverSe /> */}
+      {/* <Administração /> */}
+      <Login />
     </div>
   )
 }
