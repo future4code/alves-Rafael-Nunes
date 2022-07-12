@@ -14,13 +14,16 @@ const MatchList = styled.div`
 `
 const StyleAvatar = styled.img`
   border-radius: 50%;
+  width: 30px;
+  height: 30px;
 `
-
-export default function ListaDeMatches() {
+//*itens da lista
+export default function ListaDeMatches(props) {
+  const profile = props.profile
   return (
     <MatchList>
-      <StyleAvatar src={'https://picsum.photos/30/30'} />
-      <p>pessoa</p>
+      <StyleAvatar src={profile.photo} />
+      <p>{profile.name}</p>
     </MatchList>
   )
 }

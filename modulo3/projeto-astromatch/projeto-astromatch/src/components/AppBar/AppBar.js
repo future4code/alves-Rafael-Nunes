@@ -9,12 +9,12 @@ const StyleBar = styled.div`
   align-items: center;
 `
 
-export default function AppBar() {
+export default function AppBar(props) {
   return (
     <StyleBar>
-      <button>mudar Tela</button>
+      <button onClick={props.goToChoosePfrofile}>Inicio</button>
       <h4>AstroMatch</h4>
-      <button>Lista de Matches</button>
+      <button onClick={props.goToMatchPage}>Lista de Matches</button>
     </StyleBar>
   )
 }

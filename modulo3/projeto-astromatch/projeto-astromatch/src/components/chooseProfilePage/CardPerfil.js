@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const StyleCard = styled.div`
   margin: 15px;
   border: 1px solid black;
+  display: block;
 `
 const StyleImg = styled.img`
   width: 100%;
@@ -18,7 +19,7 @@ export default function CardPerfil(props) {
   const profile = props.profile
   return (
     <StyleCard>
-      <StyleImg src={'https://picsum.photos/300/400'} />
+      <StyleImg src={profile.photo} />
       <InfoPerfil>
         <p>
           {profile.name}, {profile.age}
