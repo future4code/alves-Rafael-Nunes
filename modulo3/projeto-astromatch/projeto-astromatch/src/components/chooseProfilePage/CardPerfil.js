@@ -14,13 +14,16 @@ const InfoPerfil = styled.div`
   padding: 16px;
 `
 
-export default function CardPerfil() {
+export default function CardPerfil(props) {
+  const profile = props.profile
   return (
     <StyleCard>
       <StyleImg src={'https://picsum.photos/300/400'} />
       <InfoPerfil>
-        <p>Rafael, 19</p>
-        <p>descrição</p>
+        <p>
+          {profile.name}, {profile.age}
+        </p>
+        <p>{profile.bio}</p>
       </InfoPerfil>
     </StyleCard>
   )

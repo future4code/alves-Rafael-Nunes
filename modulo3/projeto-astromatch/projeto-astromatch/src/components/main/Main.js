@@ -19,8 +19,8 @@ export default function Main() {
   return (
     <StyleMain>
       <AppBar />
-      {/* <ChooseProfile /> */}
-      <MatchPage />
+      <ChooseProfile />
+      {/* <MatchPage /> */}
     </StyleMain>
   )
 }
