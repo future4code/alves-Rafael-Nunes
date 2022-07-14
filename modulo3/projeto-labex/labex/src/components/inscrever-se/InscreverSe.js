@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
+import { goBack } from '../routes/coordinator'
 
 const ContainerInsc = styled.div`
   display: flex;
@@ -16,10 +17,6 @@ const Botoes = styled.div`
 
 export default function InscreverSe() {
   const navigate = useNavigate()
-
-  const goBack = () => {
-    navigate(-1)
-  }
 
   return (
     <ContainerInsc>
@@ -41,7 +38,7 @@ export default function InscreverSe() {
         <option>Opção</option>
       </select>
       <Botoes>
-        <button onClick={goBack}>Voltar</button>
+        <button onClick={() => goBack(navigate)}>Voltar</button>
         <button>Enviar</button>
       </Botoes>
     </ContainerInsc>
