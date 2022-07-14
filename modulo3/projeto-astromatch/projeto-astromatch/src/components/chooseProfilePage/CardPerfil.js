@@ -9,6 +9,7 @@ const StyleCard = styled.div`
 const StyleImg = styled.img`
   width: 100%;
   display: block;
+  height: 400px;
 `
 
 const InfoPerfil = styled.div`

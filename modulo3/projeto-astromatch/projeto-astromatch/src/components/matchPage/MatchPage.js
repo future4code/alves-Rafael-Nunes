@@ -12,10 +12,15 @@ export default function MatchPage() {
   const [matches, setMatches] = useState([])
 
   useEffect(() => {
-    axios.get(`${baseURL}/matches`).then(response => {
-      console.log(response)
-      setMatches(response.data.matches)
-    })
+    axios
+      .get(`${baseURL}/matches`)
+      .then(response => {
+        console.log(response)
+        setMatches(response.data.matches)
+      })
+      .then(err => {
+        console.log('erro matches', err)
+      })
   }, [])
 
   return (

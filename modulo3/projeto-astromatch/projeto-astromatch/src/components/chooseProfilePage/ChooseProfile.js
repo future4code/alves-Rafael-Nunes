@@ -5,7 +5,7 @@ import axios from 'axios'
 import { baseURL } from '../constants'
 
 export default function ChooseProfile() {
-  const [profileToChoose, setProfileToChoose] = useState({})
+  const [profileToChoose, setProfileToChoose] = useState(undefined)
 
   const getProfilesToChoose = () => [
     axios.get(`${baseURL}/person`).then(response => {
@@ -23,10 +23,18 @@ export default function ChooseProfile() {
       choice: choice,
       id: profileToChoose.id
     }
-    axios.post(`${baseURL}/choose-person`, body).then(response => {
-      console.log(response)
-      getProfilesToChoose()
-    })
+
+    setProfileToChoose(undefined)
+
+    axios
+      .post(`${baseURL}/choose-person`, body)
+      .then(response => {
+        console.log(response)
+        getProfilesToChoose()
+      })
+      .catch(err => {
+        console.log('erro choosePerson', err)
+      })
   }
 
   const nao = () => {
@@ -40,8 +48,14 @@ export default function ChooseProfile() {
 
   return (
     <div>
-      <CardPerfil profile={profileToChoose} />
-      <Botoes nao={nao} sim={sim} />
+      {profileToChoose ? (
+        <>
+          <CardPerfil profile={profileToChoose} />
+          <Botoes nao={nao} sim={sim} />
+        </>
+      ) : (
+        <p>...Carregando</p>
+      )}
     </div>
   )
 }
