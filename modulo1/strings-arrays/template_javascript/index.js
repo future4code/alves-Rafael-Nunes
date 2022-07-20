@@ -57,4 +57,7 @@
 //  let p3 = prompt("atividade 3")
 // let feitas = prompt("quais ja foram feitas 0, 1, 2?")
 
+
+
+
 // console.log(listaDeTarefas)
