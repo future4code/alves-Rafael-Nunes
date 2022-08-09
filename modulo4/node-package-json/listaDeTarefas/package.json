@@ -1,0 +1,14 @@
+{
+  "name": "tarefas-json",
+  "version": "1.0.0",
+  "description": "lista de tarefas",
+  "main": "listaDeTarefas.js",
+  "scripts": {
+    "test": "node ./index.js"
+  },
+  "keywords": [
+    "tarefas"
+  ],
+  "author": "Rafael Garcia",
+  "license": "ISC"
+}
