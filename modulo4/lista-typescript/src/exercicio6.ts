@@ -14,7 +14,15 @@ const infosClients:Infos[] =
 	{ cliente: "Soter", saldoTotal: 1200, debitos: [] }
 ]
 
-function negativeClients(InfosClients:Infos):Infos[] {
-  return infosClients.map()
-  
+function negativeClients(infosClients:Infos[]):Infos[] {
+   infosClients.map(infosClients =>{
+		const debts = infosClients.debitos.reduce((a,b) => a + b, 0)
+		infosClients.saldoTotal -= debts 
+		infosClients.debitos = []
+	})
+  const negativedClients = infosClients.filter(infosClients => infosClients.saldoTotal -= 0)
+	return negativedClients 
 } 
+
+console.table(negativeClients(infosClients))
+
