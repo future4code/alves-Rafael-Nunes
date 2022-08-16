@@ -63,3 +63,64 @@ app.get('/users', (req:Request, res:Response)=>{
   res.send(users)
 })
 
+// exercicio 5
+
+type Post = {
+ id:string | number,
+ title:string, 
+ body:string,
+ userId:number | string
+}
+
+//exercicio 6 
+
+const posts:Post[] = 
+[
+  {
+    id: 1,
+    title: 'Olá mundo!',
+    body: 'Olá este é meu primeiro post',
+    userId: 1
+  },
+  {
+    id: 2,
+    title: 'Bom dia!',
+    body: 'Bom dia a todos!',
+    userId: 2
+  },
+  {
+    id: 3,
+    title: 'ta certo?',
+    body: 'se não tivesse errado estaria certo',
+    userId: 3
+  },
+  {
+    id: 4,
+    title: 'onde é que eu to?',
+    body: 'sera que estou na lagoinha?',
+    userId: 4
+  }
+]
+
+//Exercicio 7 
+
+app.get('/posts', (req:Request, res:Response) =>{
+  res.send(posts)
+})
+
+// exercicio 8
+
+app.get('/posts:id', (req:Request, res:Response)=>{
+  const id = req.params.id
+
+  const getPost:Post[] = posts.filter((posts)=>{
+    return posts.userId === id
+  }) 
+    res.send(getPost)
+})
+
+//Fora pois caso quisermos chamar os usuarios de forma isolada é melhor
+//e para manter um certa organização
+
+//Exercicio 8
+
