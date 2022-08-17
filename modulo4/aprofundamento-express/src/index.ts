@@ -17,3 +17,10 @@ app.get('/ping', (req:Request, res:Response) => {
 })
 
 //Exercicio 2
+
+type tasks ={
+    userId:string | number,
+    id:string | number,
+    title:string ,
+    completed:boolean
+}
