@@ -1,4 +1,4 @@
-import express,{Request, Response} from 'express'
+import express,{Request, response, Response} from 'express'
 import cors from 'cors'
 
 const app = express()
@@ -48,3 +48,17 @@ const tasks:Task[] =
     completed: true
   }
 ] 
+
+//Exercicio 4
+
+app.get('/completed/tasks', (req:Request, res:Response) => {
+  const taskCheck = tasks.filter((item) => {
+    return item.completed === true
+  })
+  // if(tasks === taskCheck){
+  //   return res.status(200).send(taskCheck) 
+  // }else{
+  //   return res.status(404).send('informações não encontradas')
+  // }
+  res.send(taskCheck)
+})
