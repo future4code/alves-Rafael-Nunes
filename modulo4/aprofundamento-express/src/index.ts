@@ -11,12 +11,14 @@ app.listen(3003, () => {
 })
 
 //Exercicio 1
+//===============================================================================================================
 
 app.get('/ping', (req:Request, res:Response) => {
   res.send('Pong')
 })
 
 //Exercicio 2
+//=======================================================================================================================
 
 type Task ={
     userId:string | number,
@@ -26,6 +28,7 @@ type Task ={
 }
 
 //Exercicio 3
+//======================================================================================================================
 
 const tasks:Task[] =
 [
@@ -50,15 +53,40 @@ const tasks:Task[] =
 ] 
 
 //Exercicio 4
+//========================================================================================================================
 
 app.get('/completed/tasks', (req:Request, res:Response) => {
   const taskCheck = tasks.filter((item) => {
     return item.completed === true
   })
-  // if(tasks === taskCheck){
-  //   return res.status(200).send(taskCheck) 
-  // }else{
-  //   return res.status(404).send('informações não encontradas')
-  // }
+  
   res.send(taskCheck)
+  })
+
+
+  //Exercicio 4.2
+  //========================================================================================================================
+
+  app.get('/incomplete/tasks', (req:Request, res:Response) => {
+    const taskCheck = tasks.filter((item) => {
+      return item.completed === !true
+    })
+    res.send(taskCheck)
+  })
+
+//Exercicio 5
+//============================================================================================================================
+
+app.post('/new/task', (req:Request, res:Response) => {
+  const newTask:Task = {
+    userId: req.body.userId,
+    id: req.body.id,
+    title: req.body.title,
+    completed: req.body.completed
+  }
+  tasks.push(newTask)
+  res.send(tasks)
 })
+
+//Exercicio 6
+//==============================================================================================================================
