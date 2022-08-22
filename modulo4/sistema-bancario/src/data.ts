@@ -1,6 +1,6 @@
 export type Extrato = {
   descricao:string,
-  data:string | number,
+  data1:string | number,
   valor:number
 }
 
@@ -19,7 +19,7 @@ export const users:User[] =
     data:'05/05/2005',
     extrato:[{
       descricao:'alguma coisa',
-      data: '27/05/2022',
+      data1: '27/05/2022',
       valor:19.90
     }]
   }
