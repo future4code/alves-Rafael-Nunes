@@ -55,3 +55,19 @@ VALUES(
 "1949-04-18",
 "male"
 );
+
+-- 3)
+
+-- )SELECT id, salary FROM Actor where gender = 'male'
+
+-- )SELECT \* FROM Actor where gender = 'female'
+
+-- )SELECT \* FROM Actor where name = 'Tony Ramos'
+
+-- )SELECT \* FROM Actor where gender = 'invalid'
+
+-- )SELECT id, name FROM Actor where id = '001'
+
+-- )SELECT \* FROM Actor where salary <= 500000
+
+-- 4)
