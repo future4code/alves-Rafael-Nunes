@@ -1,4 +1,4 @@
-/env
+/.env
 /node_ modules
 /package-lock.json
 /package.json
