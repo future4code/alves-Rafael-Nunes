@@ -1,0 +1,4 @@
+ Get http://localhost:3003/users
+
+###
+Get  http://localhost:3003/name/filter?name=Soter
