@@ -1,11 +1,13 @@
 import express, {Express} from 'express'
 import cors from 'cors'
-import knex from "knex";
-import dotenv from "dotenv";
+import knex from "knex"
 import createUser from './endpoints/createUser'
-import { AddressInfo } from "net";
+import { AddressInfo } from "net"
+import getUsers from './endpoints/getUsers'
+import createProduct from './endpoints/createProduct'
+import getProducts from './endpoints/getProducts'
+import createPurchase from './endpoints/createPurchase'
 
-dotenv.config();
 
 const app: Express = express();
 
@@ -21,17 +23,10 @@ const server = app.listen(process.env.PORT || 3003, () => {
   }
 });
 
-export const connection = knex({
-	client: "mysql",
-	connection: {
-    host: process.env.DB_HOST,
-    port: 3306,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_SCHEMA
-  }
-});
-
 
 
 app.post('/user', createUser)
+app.get('/users', getUsers)
+app.post('/product', createProduct)
+app.get('/products', getProducts)
+app.post('/purchase', createPurchase)

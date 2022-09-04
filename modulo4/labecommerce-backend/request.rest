@@ -1,8 +1,36 @@
-Post http://localhost:3003/user
+POST http://localhost:3003/user
 Content-Type: application/json
 
 {
-  "name": "Zequinha",
-  "email": "zequinha@email.com",
-  "password": "zequinha123"
+  "name": "Claudio",
+  "email": "claudin@email.com",
+  "password": "159877"
+}
+
+###
+GET http://localhost:3003/users
+
+###
+POST http://localhost:3003/product
+Content-Type: application/json
+
+{
+  "name":"camisa branca",
+  "price":"50",
+  "imageUrl":"https://i.pinimg.com/564x/ab/e8/89/abe88987ab1188ee695b45bbdb0ea98e.jpg"
+}
+
+###
+
+GET http://localhost:3003/products
+
+###
+POST http://localhost:3003/purchase
+Content-Type: application/json
+
+{
+  "userId":"1662164208112",
+  "productId":"1662241351105",
+  "quantity": "2",
+  "totalPrice": "100,
 }
