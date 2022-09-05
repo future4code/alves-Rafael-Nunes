@@ -98,3 +98,27 @@ const UserAccount3 :UserAccount = new UserAccount(
   [transactions1]
 )
 console.log(UserAccount3)
+
+//==========================================================================================
+//3
+
+class Bank{
+  private accounts:UserAccount[]
+
+  constructor(
+    accounts: UserAccount[]
+  ){
+    this.accounts = accounts
+  }
+
+  public getAccounts(){
+    return this.accounts
+  }
+
+}
+
+const accountTest = new Bank(
+  [UserAccount3]
+) 
+console.log(accountTest)
+
