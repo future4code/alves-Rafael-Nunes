@@ -1,0 +1,15 @@
+{
+  "name": "listamat",
+  "version": "1.0.0",
+  "description": "lista de operacoes matematicas",
+  "main": "operacoesMat.js",
+  "scripts": {
+    "test": "node ./index.js"
+  },
+  "keywords": [
+    "math",
+    "matematica"
+  ],
+  "author": "Rafael Garcia",
+  "license": "ISC"
+}

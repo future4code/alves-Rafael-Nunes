@@ -1,0 +1,80 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+header{
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+  width: 100vw;
+  height: 4vw;
+  background-color: mediumvioletred;
+  column-gap: 85%;
+}
+
+.bolinho{
+  width: 1vw;
+  height: 1vw;
+}
+
+main{
+  justify-content: space-evenly;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+}
+
+.card{
+  flex-basis: 10%;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: 2px solid black;
+  width: 200px;
+  height: 250px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.bolo{
+  width: 100%;
+}
+
+
+h3{
+  font-size: 25px;
+}
+
+
+nav{
+  display: flex;
+  font-size: 1vw;
+  padding: 1vw;
+  align-items: stretch;
+  justify-content: left;
+  flex-direction: column;
+  width: 15vw;
+  height: 50vw;
+  background-color: #f2d0e0;
+}
+
+.icone{
+
+  width: 1vw;
+  height: 1vw;
+}
+
+
+footer{
+  display: flex;
+  background-color: mediumvioletred;
+  width: 100vw;
+  height: 4vw;
+}
+
+.mensage{
+  font-size: 20px;
+}
