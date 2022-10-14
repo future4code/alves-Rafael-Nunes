@@ -24,29 +24,6 @@ export const pizzasSeed: IPizzaDB[] = [
     }
 ]
 
-export const ingredientsSeed: IIngredientsDB[] = [
-    {
-        name: "tomato"
-    },
-    {
-        name: "mozzarella"
-    },
-    {
-        name: "mozarella di bufala"
-    },
-    {
-        name: "anchovies"
-    },
-    {
-        name: "oregano"
-    },
-    {
-        name: "oil"
-    },
-    {
-        name: "spicy salami"
-    }
-]
 
 export const pizzasIngredientsSeed: IPizzasIngredientsDB[] = [
     {
@@ -104,5 +81,29 @@ export const pizzasIngredientsSeed: IPizzasIngredientsDB[] = [
     {
         pizza_name: "Pizza Bianca",
         ingredient_name: "oregano"
+    }
+]
+
+export const ingredientsSeed: IIngredientsDB[] = [
+    {
+        name: "tomato"
+    },
+    {
+        name: "mozzarella"
+    },
+    {
+        name: "mozarella di bufala"
+    },
+    {
+        name: "anchovies"
+    },
+    {
+        name: "oregano"
+    },
+    {
+        name: "oil"
+    },
+    {
+        name: "spicy salami"
     }
 ]
