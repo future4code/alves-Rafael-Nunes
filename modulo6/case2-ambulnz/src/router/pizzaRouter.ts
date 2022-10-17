@@ -15,3 +15,4 @@ const pizzaController = new PizzaController(
 )
 
 pizzaRouter.get("/", pizzaController.getPizzas)
+pizzaRouter.post("/", pizzaController.getPizzas)
