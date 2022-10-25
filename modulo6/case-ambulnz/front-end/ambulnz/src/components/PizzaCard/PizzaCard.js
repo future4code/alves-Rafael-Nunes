@@ -20,7 +20,7 @@ export default function PizzaCard(props) {
           })}
         </p>
         <DivCardButton>
-          <CardButton onClick={() => addToCart(pizza.name)}>
+          <CardButton onClick={() => addToCart(pizza)}>
             adicionar no carrinho
           </CardButton>
         </DivCardButton>

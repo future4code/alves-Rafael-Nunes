@@ -12,7 +12,9 @@ function App() {
   const [cart, setCart] = useState([])
 
   const addToCart = addPizza => {
-    const foundIndex = cart.indexOf(
+    console.log(cart)
+    console.log(addPizza)
+    const foundIndex = cart.findIndex(
       pizzaInCart => pizzaInCart.name === addPizza.name
     )
 

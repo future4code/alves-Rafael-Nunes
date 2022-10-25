@@ -4,6 +4,8 @@ import { DelButton, DivDelButton, StyleCardCart } from './CardCart.styled'
 export default function CardCart(props) {
   const { pizza } = props
 
+  console.log(pizza.name)
+
   return (
     <div>
       <StyleCardCart>

@@ -13,7 +13,7 @@ export default function Cart(props) {
 
     return total.toLocaleString('pt-br', { style: 'currency', currency: 'USD' })
   }
-
+  console.log(cart)
   return (
     <MainCart>
       <h2>Resumo do pedido</h2>
