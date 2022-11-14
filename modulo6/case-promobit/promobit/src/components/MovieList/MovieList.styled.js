@@ -35,3 +35,21 @@ export const CardMovie = styled.div`
     }
   }
 `
+
+export const ContainerButtons = styled.div`
+  display: flex;
+  width: 100vw;
+  max-width: 100vw;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 6em;
+    height: 1.7em;
+    margin: 1em;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #5c16c5;
+    color: #fff;
+  }
+`

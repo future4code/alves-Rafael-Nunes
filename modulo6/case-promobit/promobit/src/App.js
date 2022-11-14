@@ -1,11 +1,10 @@
-import Header from './components/Header/Header'
-import MovieList from './components/Home/MovieList'
+import Direction from './components/Direction/Direction'
+import { Router } from './Router/Router'
 
 function App() {
   return (
     <div>
-      <Header />
-      <MovieList />
+      <Router />
     </div>
   )
 }
